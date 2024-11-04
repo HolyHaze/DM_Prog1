@@ -1,0 +1,64 @@
+/* Styles pour le corps de la page */
+body {
+    background-color: #f0f0f0; /* Couleur de fond gris clair */
+    font-family: Arial, sans-serif; /* Police utilisée pour le texte */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    height: 100vh; /* Hauteur de la fenêtre d'affichage */
+    margin: 0; /* Supprime les marges par défaut du corps */
+}
+
+/* Styles pour le conteneur de la calculatrice */
+.calculator {
+    background-color: #fff; /* Couleur de fond blanche */
+    border-radius: 10px; /* Bords arrondis du conteneur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre portée pour le conteneur */
+    padding: 20px; /* Espacement interne autour du contenu */
+    width: 300px; /* Largeur fixe du conteneur */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+
+/* Styles pour le titre de la calculatrice */
+h1 {
+    font-size: 24px; /* Taille de la police pour le titre */
+    color: #333; /* Couleur du texte (gris foncé) */
+    margin-bottom: 20px; /* Marge en bas du titre pour l'espacement */
+}
+
+/* Styles pour les champs de saisie (numériques et texte) */
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px); /* Largeur calculée pour tenir compte du rembourrage */
+    padding: 10px; /* Espacement interne pour le champ */
+    margin: 10px 0; /* Marge en haut et en bas */
+    border: 1px solid #ccc; /* Bord gris clair autour du champ */
+    border-radius: 5px; /* Bords arrondis du champ */
+    font-size: 16px; /* Taille de la police pour le texte dans le champ */
+}
+
+/* Styles pour les boutons */
+button {
+    width: 60px; /* Largeur fixe pour les boutons */
+    padding: 10px; /* Espacement interne pour le bouton */
+    margin: 5px; /* Marge autour des boutons */
+    border: none; /* Pas de bordure par défaut */
+    border-radius: 5px; /* Bords arrondis pour les boutons */
+    font-size: 16px; /* Taille de la police pour le texte du bouton */
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur au survol */
+}
+
+/* Styles pour les boutons au survol */
+button:hover {
+    background-color: #45a049; /* Couleur de fond verte foncée au survol */
+}
+
+/* Styles pour le champ de résultat */
+#result {
+    margin-top: 10px; /* Marge en haut du champ de résultat */
+    font-weight: bold; /* Texte en gras */
+    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+    border: 1px solid #ccc; /* Bord gris clair autour du champ de résultat */
+}

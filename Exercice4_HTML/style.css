@@ -1,0 +1,108 @@
+/* Styles de base pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression des espaces par défaut */
+    line-height: 1.6; /* Amélioration de la lisibilité */
+    display: flex; /* Utilisation de flexbox pour le corps */
+    flex-direction: column; /* Orientation verticale */
+    min-height: 100vh; /* Minimum de 100% de la hauteur de la fenêtre */
+    background-color: #f4f4f4; /* Couleur de fond globale */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background: linear-gradient(90deg, #4CAF50, #45a049); /* Dégradé de couleur */
+    color: #fff; /* Couleur du texte dans l'en-tête */
+    padding: 1.5rem; /* Espacement intérieur */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre sous l'en-tête */
+}
+
+/* Styles pour la navigation */
+nav {
+    margin: 1rem 0; /* Marges autour de la navigation */
+}
+
+nav a {
+    margin: 0 15px; /* Espacement entre les liens */
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Suppression du soulignement */
+    font-weight: bold; /* Mettre en gras */
+    transition: color 0.3s; /* Transition douce pour la couleur */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Couleur au survol */
+}
+
+/* Styles pour les sections */
+section {
+    padding: 20px; /* Espacement intérieur */
+    margin: 20px; /* Espacement extérieur */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #fff; /* Couleur de fond des sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre autour des sections */
+    flex: 1; /* Permet aux sections de s'étendre et remplir l'espace */
+}
+
+/* Styles pour les titres des sections */
+h2 {
+    color: #333; /* Couleur des titres */
+    border-bottom: 2px solid #4CAF50; /* Ligne sous les titres */
+    padding-bottom: 5px; /* Espacement sous les titres */
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center; /* Centrer le texte du pied de page */
+    padding: 1.5rem; /* Espacement intérieur */
+    background: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte dans le pied de page */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre au-dessus du pied de page */
+}
+
+/* Styles pour le formulaire */
+form {
+    display: flex; /* Utilisation de flexbox pour le formulaire */
+    flex-direction: column; /* Orientation verticale des champs */
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: auto; /* Centrer le formulaire */
+}
+
+label {
+    margin-top: 15px; /* Espacement au-dessus des labels */
+    font-weight: bold; /* Mettre en gras */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px; /* Espacement intérieur des champs */
+    margin-top: 5px; /* Espacement au-dessus des champs */
+    border: 1px solid #ccc; /* Bordure des champs */
+    border-radius: 5px; /* Coins arrondis des champs */
+    transition: border-color 0.3s; /* Transition douce pour la couleur de bordure */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Couleur de bordure au focus */
+    outline: none; /* Suppression du contour par défaut */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Suppression de la bordure */
+    padding: 12px; /* Espacement intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur en main au survol */
+    margin-top: 15px; /* Espacement au-dessus du bouton */
+    transition: background-color 0.3s; /* Transition douce pour la couleur */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Changer la couleur au survol */
+}

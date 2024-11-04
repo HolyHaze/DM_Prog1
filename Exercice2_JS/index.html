@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend la page responsive -->
+    <title>Calculatrice Simple</title> <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour le style -->
+</head>
+<body>
+    <div class="calculator"> <!-- Conteneur principal de la calculatrice -->
+        <h1>Calculatrice</h1> <!-- Titre de la calculatrice -->
+        
+        <!-- Champ de saisie pour le premier nombre -->
+        <input type="number" id="number1" placeholder="Nombre 1" required onkeydown="return validateKey(event)">
+        
+        <!-- Champ de saisie pour le deuxième nombre -->
+        <input type="number" id="number2" placeholder="Nombre 2" required onkeydown="return validateKey(event)">
+        <br> <!-- Saut de ligne pour une meilleure mise en page -->
+        
+        <!-- Boutons pour les opérations -->
+        <button onclick="calculate('+')">+</button> <!-- Bouton pour addition -->
+        <button onclick="calculate('-')">-</button> <!-- Bouton pour soustraction -->
+        <button onclick="calculate('*')">×</button> <!-- Bouton pour multiplication -->
+        <button onclick="calculate('/')">÷</button> <!-- Bouton pour division -->
+        <button onclick="clearCalculator()">Clear</button> <!-- Bouton pour réinitialiser les champs -->
+        <br> <!-- Saut de ligne pour une meilleure mise en page -->
+        
+        <!-- Champ de saisie pour afficher le résultat -->
+        <input type="text" id="result" placeholder="Résultat" readonly> <!-- 'readonly' empêche la modification de ce champ -->
+    </div>
+
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript pour la logique de la calculatrice -->
+</body>
+</html>

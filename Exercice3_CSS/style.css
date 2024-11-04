@@ -1,0 +1,37 @@
+/* Styles pour le titre */
+h1 {
+    text-align: center; /* Centre le titre */
+    color: #3498db; /* Choisissez la couleur que vous préférez */
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 18px; /* Taille de police de 18px */
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Styles pour les éléments de liste */
+ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+li {
+    font-style: italic; /* Met le texte en italique */
+    text-align: right; /* Aligne le texte à droite */
+}
+
+/* Bonus : Media queries pour mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Réduit la taille du titre sur mobile */
+    }
+
+    p {
+        font-size: 16px; /* Réduit la taille du texte sur mobile */
+    }
+
+    li {
+        text-align: left; /* Change l'alignement des listes à gauche sur mobile */
+    }
+}
